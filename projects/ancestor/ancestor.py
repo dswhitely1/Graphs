@@ -42,6 +42,7 @@ class Graph:
         for parent in self.get_neighbor(start):
             visited.add(start)
             self.dfs(parent, visited, path, result)
+            # [(11,2), (4,2)]
         return result
 
 
